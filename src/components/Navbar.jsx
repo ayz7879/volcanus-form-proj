@@ -30,23 +30,24 @@ const Navbar = () => {
           @Ash-Form-Builder
         </span>
         <div className="nav-btns btns flex items-center justify-center gap-8">
-          <Link
-            to={"/"}
-            // style={{width:"150px"}}
-            onClick={createForm}
-            className="text-white justify-center flex items-center gap-2 bg-gray-500 hover:bg-blue-700 font-bold py-2 px-2  rounded-full"
-          >
-            Create Form <FaPlus color="yellow" size={20} />
-          </Link>
-          <Link
-            to={"/"}
-            
-            // style={{width:"150px"}}
-            onClick={clearForm}
-            className="text-white flex justify-center items-center gap-2 bg-gray-500 hover:bg-blue-700 font-bold py-2 px-2 rounded-full"
-          >
-            Saved Form <MdDeleteForever color="yellow" size={25} />
-          </Link>
+          <button onClick={createForm}>
+            <Link
+              to={"/"}
+              // style={{width:"150px"}}
+              className="text-white justify-center flex items-center gap-2 bg-gray-500 hover:bg-blue-700 font-bold py-2 px-2  rounded-full"
+            >
+              Create Form <FaPlus color="yellow" size={20} />
+            </Link>
+          </button>
+          <button onClick={clearForm}>
+            <Link
+              to={"/"}
+              // style={{width:"150px"}}
+              className="text-white flex justify-center items-center gap-2 bg-gray-500 hover:bg-blue-700 font-bold py-2 px-2 rounded-full"
+            >
+              Saved Form <MdDeleteForever color="yellow" size={25} />
+            </Link>
+          </button>
         </div>
       </nav>
       <hr />
