@@ -32,7 +32,6 @@ const Home = () => {
     setFormArray(filterData);
     setId("");
     setFlag1(false);
-    setformId("");
   };
 
   const saveForm = () => {
@@ -87,7 +86,7 @@ const Home = () => {
           <div className="main-div flex items-center justify-center">
             <div className="home w-full flex flex-col gap-2 items-center justify-center">
               {saveFormData.length < 1 && (
-                <div  className="flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center">
                   <span
                     style={{ color: "white" }}
                     className=" font-bold text-3xl font-mono text-center "
